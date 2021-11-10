@@ -1,0 +1,29 @@
+{
+  "name": "chigui_customer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "frontend": "npm start --prefix ../frontend",
+    "server": "nodemon server.js",
+    "preserver": "start mongod --dbpath D:/mongodb",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "NightFury",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.3.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "multer": "^1.4.3",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
